@@ -11,6 +11,8 @@
   <!-- Main Stylesheet File -->
   <link  rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="javascript/main.js"></script>
 </head>
 <script> 
   function openNav() {
@@ -28,8 +30,11 @@
   ============================-->
   <header id="header">
     <div class="container">
-      <div class="logo">
-        <a href="index.html" title="Home" data-ripple=""><img src="images/TSS_logo.svg" alt="" title=""></a>
+      <div id="logo0">
+        <a href="index.html" title="Home" data-ripple=""><img src="images/TSS_logo_w.svg" id="logo0" alt="" title=""></a>
+      </div>
+      <div id="logo1">
+        <a href="index.html" title="Home" data-ripple=""><img src="images/TSS_logo.svg" id="logo1" alt="" title=""></a>
       </div>
       <div id="nav-menu-container">
       <ul class="nav-menu nshow">
@@ -43,7 +48,8 @@
         <li class="men">
           <div id="mySidepanel" class="sidepanel">
             <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
-            <a href="index.html"title="Home" data-ripple="">Home</a>
+            <span>MENU</span>
+            <a href="index.html"title="Home" data-ripple="" >Home</a>
             <a href="Tss_Fam.html" title="Tss Fam" data-ripple="" class="menu-active">TSS-Fam</a>
             <a href="https://energyboatchallenge.com/en/home-english/" title="MEBC(HOME)" data-ripple="">MEBC </a>
             <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
@@ -55,16 +61,22 @@
       </div>
     </div>
   </header><!-- #header -->
+  <div class="slideshow-container">
+    <img src="images/bgmain.jpg" style="width: 100%;min-width: fit-content;" class="slideimage1">
+    <div class="overmainimage1 fade-in-text">
+      <span>TSS FAM</span>
+    </div>  
+  </div>
   <div class="pagetitlebg1">
     <h1 class="centered1"> Tss fam teams and members...</h1>
-    <a onclick="changetoind()"><button type="button" id="teamsbutt" class="menubutt menu-active">Teams</button></a>
-    <a onclick="changetoteam()"><button type="button" id="indbutt" class="menubutt">Individuals</button></a>
+    <a onclick="changetoind()"><button type="button" style="border-radius: 8px 0 0 8px;" id="teamsbutt" class="menubutt mactive">Teams</button></a>
+    <a onclick="changetoteam()"><button type="button" style="border-radius: 0 8px 8px 0;" id="indbutt" class="menubutt">Individuals</button></a>
   </div>
   <div class="maincont" id="maincontteam">
     <div class="homecontainertss">
       <div class="parag">
         <span class="title">Mechanical Team</span>
-        <span>1. MOHAN R<br>2. MANAV R SAMANT<br>3. KISHORE KRISHNA S<br>4. ANJAN PRASAD</span>
+        <span><i class="fa fa-star"></i>MOHAN R<br><i class="fa fa-star"></i>MANAV R SAMANT<br><i class="fa fa-star"></i>KISHORE KRISNA S<br><i class="fa fa-star"></i>ANJANA PRASAD</span>
       </div>
       <div class="image">
         <img src="images/mechteam.jpg" style="width:100%">
@@ -73,7 +85,7 @@
     <div class="homecontainertss homecontainertssleft">
       <div class="parag">
         <span class="title">Electrical Team</span>
-        <span>1. ANANDH<br>2. VIKASH S<br>3. NAVEEN V<br>4. GERONTIUS LEO L</span>
+        <span><i class="fa fa-star"></i>ANANDH<br><i class="fa fa-star"></i>VIKASH S<br><i class="fa fa-star"></i>NAVEEN V<br><i class="fa fa-star"></i>GERONTIUS LEO L</span>
       </div>
       <div class="image">
         <img src="images/electricalteam.jpg" style="width:100%">
@@ -82,7 +94,7 @@
     <div class="homecontainertss">
       <div class="parag">
         <span class="title">Communication Team</span>
-        <span>1. BHARATHRAJ M<br>2. VEKASH S</span>
+        <span><i class="fa fa-star"></i>BHARATHRAJ M<br><i class="fa fa-star"></i>VEKASH S</span>
       </div>
       <div class="image">
         <img src="images/commteam.jpg" style="width:100%">
@@ -91,7 +103,7 @@
     <div class="homecontainertss homecontainertssleft">
       <div class="parag">
         <span class="title">Management Team</span>
-        <span>1. AADIL REHAAN MUHAMED<br>2. SANAA MOHAMMAD<br>3. SWAMINATHAN C<br>4. SAMRITHA S<br>5. PRATIGYA S</span>
+        <span><i class="fa fa-star"></i>AADIL REHAAN MUHAMED<br><i class="fa fa-star"></i>SANAA MOHAMMAD<br><i class="fa fa-star"></i>SWAMINATHAN C<br><i class="fa fa-star"></i>SAMRITHA S<br><i class="fa fa-star"></i>PRATIGYA S</span>
       </div>
       <div class="image">
         <img src="images/managementteam.jpg" style="width:100%">
@@ -121,7 +133,7 @@
     </div>
     <div class="card">
       <img src="images/kishore.jpg" alt="" title="">
-      <span>KISHORE KRISHNA S</span>
+      <span>KISHORE KRISNA S</span>
       <p>Designation</p>
     </div>
     <div class="card">
@@ -230,7 +242,7 @@
     document.getElementById("maincontteam").style.display="none";
     document.getElementById("individual-cards").style.display="flex";
     document.getElementById("teamsbutt").style.backgroundColor="#ffffff";
-    document.getElementById("indbutt").style.backgroundColor="#f38e40";
+    document.getElementById("indbutt").style.backgroundColor="#254e9c";
     document.getElementById("teamsbutt").style.color="#ea423a";
     document.getElementById("indbutt").style.color="#ffffff";
   }
@@ -239,7 +251,7 @@
     document.getElementById("individual-cards").style.display="none";
     document.getElementById("maincontteam").style.display="block";
     document.getElementById("indbutt").style.backgroundColor="#ffffff";
-    document.getElementById("teamsbutt").style.backgroundColor="#f38e40";
+    document.getElementById("teamsbutt").style.backgroundColor="#254e9c";
     document.getElementById("indbutt").style.color="#ea423a";
     document.getElementById("teamsbutt").style.color="#ffffff";
   }
