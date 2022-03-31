@@ -3,14 +3,18 @@ jQuery(document).ready(function( $ ){
   // Header fixed on scroll
   $(window).scroll(function() {
     if($(this).scrollTop() > 2000){
-      $('.cardl').addClass('animate');
-      $('.cardr').addClass('animate');
+      $('.cardl').addClass('animatel');
+      $('.cardr').addClass('animatel');
       $('.mission').removeClass('fade-in-text');
       $('.vision').removeClass('fade-in-text');
+      $('.vision-title-ovm').removeClass('fade-in-text');
+      $('.mission-title-ovm').removeClass('fade-in-text');
     }
     else if ($(this).scrollTop() > 900) {
       $('.mission').addClass('fade-in-text');
       $('.vision').addClass('fade-in-text');
+      $('.vision-title-ovm').addClass('fade-in-text');
+      $('.mission-title-ovm').addClass('fade-in-text');
     }
     else if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -21,10 +25,12 @@ jQuery(document).ready(function( $ ){
       $("a[class!='menu-active']").addClass('changecolor');
       $('#hc-parag').addClass('animate');
       $('#hc-image').addClass('animate');
-      $('.cardl').removeClass('animate');
-      $('.cardr').removeClass('animate');
+      $('.cardl').removeClass('animatel');
+      $('.cardr').removeClass('animatel');
       $('.mission').removeClass('fade-in-text');
       $('.vision').removeClass('fade-in-text');
+      $('.vision-title-ovm').removeClass('fade-in-text');
+      $('.mission-title-ovm').removeClass('fade-in-text');
     }
     else {
       $('#header').removeClass('header-scrolled');
