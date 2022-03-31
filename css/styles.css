@@ -44,7 +44,7 @@ body{
   transition: all 1s;
   z-index: 1;
   width: 100%;
-  height: 75px;
+  height: 60px;
   margin: 0px;
   background-color: #0000007d;
   display: block;
@@ -65,8 +65,8 @@ body{
     display: block;
     float: left;
     margin-top: 5px;
-    width: 44px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
 }
 #logo0{
   display: block;
@@ -95,7 +95,7 @@ body{
 #nav-menu-container {
     float: right;
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .nav-menu li {
@@ -592,14 +592,14 @@ body{
   position: relative;
 }
 
-.cardl.animate{
+.cardl.animatel{
   animation: mymovecardl 3s;
 }
 @keyframes mymovecardl {
   from {transform: translate(-50%,-50%)}
   to {transform: translate(0%,0%)}
 }
-.cardr.animate{
+.cardr.animatel{
   animation: mymovecardr 3s;
 }
 @keyframes mymovecardr {
@@ -1194,7 +1194,7 @@ body{
   padding-top: 20px;
   display: flex;
   flex-direction: row;
-  width: 40%;
+  width: 50%;
   justify-content: space-between;
 }
 
@@ -1319,7 +1319,7 @@ body{
   padding-top: 20px;
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 50%;
   justify-content: space-between;
 }
 .quickaddress .quicksocialmedia i{
