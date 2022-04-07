@@ -714,6 +714,7 @@ body{
   }
   .rmcont{
     align-self: center;
+    text-align: -webkit-center;
   }
 }
 @media screen and (max-width: 800px){
@@ -854,6 +855,20 @@ body{
   align-self: center;
   padding-left: 5%;
 }
+.movefromleft{
+  animation: mymoveleft 3s;
+}
+@keyframes mymoveleft {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0%);}
+}
+.movefromright{
+  animation: mymoveimg 3s;
+}
+@keyframes mymoveright {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0%);}
+}
 @media screen and (max-width: 930px){
   .homecontainertss{
     flex-direction: column;
@@ -923,12 +938,31 @@ body{
   align-content: center;
   justify-content: center;
   text-align: center;
+  position: relative;
   margin: 30px;
 }
-
+.induvidual-cards .card .centeredtitle {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 100%;
+  height: 25%;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+}
+.induvidual-cards .card:hover .centeredtitle{
+  height: 100%;
+  background: rgba(7, 28, 78, 0.5);
+  transition: 1s;
+}
 .induvidual-cards img{
   width: 100%;
-  margin-bottom: 20px;
   border-radius: 15px;
 }
 
@@ -938,9 +972,31 @@ body{
   width: 100%;
 }
 .induvidual-cards p{
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   width: 100%;
+}
+.induvidual-cards .card .centeredtitle .dips{
+  display: none;
+  transition: 2s;
+}
+.induvidual-cards .card:hover .centeredtitle .dips{
+  display: block;
+}
+.homecontainertss .parag span a i,
+.induvidual-cards .card .centeredtitle i{
+  padding: 5px;
+  margin: 10px;
+  color: #ffffff;
+  background-color: #254e9c;
+  border-radius: 50%;
+  border: 2px solid #254e9c;
+}
+.homecontainertss .parag span a i:hover,
+.induvidual-cards .card .centeredtitle i:hover{
+  color: #ea423a;
+  background-color: #ffffff;
+  border: 2px solid #ea423a;
 }
 @media screen and (max-width: 600px) {
   .induvidual-cards .card{
@@ -950,15 +1006,16 @@ body{
 
   .induvidual-cards img{
     width: 100%;
-    margin-bottom: 10px;
   }
-
+  .induvidual-cards .card .centeredtitle {
+    height: 30%;
+  }
   .induvidual-cards span{
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
   }
   .induvidual-cards p{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
   }
 }
@@ -968,29 +1025,15 @@ body{
 /*--------------------------------------------------------------
 # aboutus start
 --------------------------------------------------------------*/
-.aboutcontent .card {
-  box-shadow: 0px 0px 10px 6px rgba(35, 47, 84, 0.5);
-  border-radius: 15px;
-  border: 2px solid #dcdcdc;
-  background-color: #ffffff;
-  margin: 20px;
-  width: 28%;
-  color: #000000;
-  padding: 20px 25px;
-  height: 370px;
-  position: relative;
-}
+
 .aboutcontent{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px 0 20px 0;
-}
-.aboutcontent .card:hover {
-  box-shadow: 0px 3px 6px #1376bc;
+    padding: 0 0 20px 0;
 }
 
-.aboutcontent .card .title{
+.aboutcontent .title{
   margin-top: 10px;
   margin-bottom: 15px;
   font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -1001,31 +1044,23 @@ body{
   font-weight: 600;
   color: #e31e24;
 }
-.aboutcontent .card .productcontent{
+.aboutcontent p{
   width: 100%;
   font-size: 16px;
   font-weight: 400;
   text-align: justify;
 }
 @media screen and (max-width: 1200px) {
-  .aboutcontent  .card {
-      height: 600px;
-      margin:20px 10px;
-  }
-  .aboutcontent .card .title{
+  .aboutcontent .title{
     height: 70px;
   }
 }
 @media screen and (max-width: 800px) {
-  .aboutcontent  .card {
-      width: 85%;
-      height: 350px;
-  }
-  .aboutcontent .card .title{
+  .aboutcontent .title{
     height: 45px;
     font-size: 24px;
   }
-  .aboutcontent .card .productcontent{
+  .aboutcontent p{
     font-size: 14px;
   }
 }
