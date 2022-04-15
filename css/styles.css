@@ -32,6 +32,85 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #f38e40; 
   }
+.loader {
+  display: block;
+  position: relative;
+  left: 45%;
+  top: 400px;
+}
+
+.duo {
+  height: 20px;
+  width: 50px;
+  background: hsla(0, 0%, 0%, 0.0);
+  position: absolute;
+  
+}
+
+.duo, .dot {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.duo1 {
+  left: 0;
+}
+
+.duo2 {
+  left: 30px
+}
+
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #333;
+  position: absolute;
+}
+
+.dot-a {
+  left: 0px;  
+}
+
+.dot-b {
+  right: 0px;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(180deg) }
+  100% { transform: rotate(180deg) }
+}
+
+@keyframes onOff {
+    0% { opacity: 0; }
+   49% { opacity: 0; }
+   50% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.duo1 {
+  animation-name: spin;
+}
+
+.duo2 {
+  animation-name: spin;
+  animation-direction: reverse;
+}
+
+.duo2 .dot-b {
+  animation-name: onOff;
+}
+
+.duo1 .dot-a {
+  opacity: 0;
+  animation-name: onOff;
+  animation-direction: reverse;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -257,6 +336,7 @@ body{
     top: 55%;
     left: 45%;
     letter-spacing: 5px;
+    animation-duration: 6s!important;
     transform: translate(-50%,-50%);
     width: 80%;
     font-size: 100px;
@@ -290,6 +370,7 @@ body{
   justify-content: center;
   padding-top: 40px;
   font-weight: 400;
+  overflow: hidden;
 }
 .homecontainer .parag{
   color: #232f54;
@@ -341,6 +422,9 @@ body{
 }
 .rmcont{
   padding: 20px 0;
+  align-self: center;
+  z-index: 1;
+  text-align: -webkit-center;
 }
 .rmcont a{
   padding:  5px;
@@ -416,7 +500,7 @@ body{
 }
 .home-about .mf-bg img{
   height: 200px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .about-ovm{
   display: none;
@@ -523,7 +607,7 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 5% 40px;
+  padding: 0 5% 0px;
 }
 
 .sponsors-cards .logo{
@@ -547,7 +631,7 @@ body{
     position: relative;
     background-color: #1376bc;
     height: 350px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 .contactplace .centered-text{
     position:absolute ;
@@ -611,6 +695,7 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 .teamcont .image1 {
   position: relative;
@@ -712,10 +797,8 @@ body{
     font-size: 24px;
     line-height: 25px;
   }
-  .rmcont{
     align-self: center;
     text-align: -webkit-center;
-  }
 }
 @media screen and (max-width: 800px){
   .sponsors-cards .logo{
@@ -807,6 +890,7 @@ body{
 }
 .maincont{
     margin-right: 50px;
+    overflow: hidden;
     padding-bottom: 40px;
 }
 .homecontainertss{
@@ -1068,28 +1152,38 @@ body{
 # aboutus end
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# process capabilities start
+# partners start
 --------------------------------------------------------------*/
 .partners{
   margin-top: 40px;
+}
+
+.partner-title{
+  text-align: center;
+  padding: 20px 0 0;
+}
+.partner-title span{
+  color: #f38e40;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 30px;
 }
 .partnersflow{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   box-shadow: 0px 8px 16px 0px rgba(35, 47, 84, 0.5);
-  border-radius: 0 30px 30px 0;
+  border-radius:30px 0 0 30px;
   border: 2px solid #dcdcdc;
   margin: 0 7% 40px;
 }
 .partnersflow .left-image{
   width: 40%;
-  padding: 100px 0px;
+  text-align: center;
+  align-self: center;
   position: relative;
 }
 .partnersflow .left-image img{
   width: 70%;
-  margin-left: 30px;
 }
 .partnersflow .right-text{
   width: 60%;
@@ -1097,12 +1191,13 @@ body{
   text-align: center;
   padding: 5%;
   font-size: 16px;
-  font-weight: 400; 
+  font-weight: 400;
+  background: #1376bc4a;
+  border-radius:  0 0 0 200px;
 }
 .partnersflow .centeredtitle {
   position: absolute;
   top: 0;
-  background: #1376bc4a;
   width: 100%;
   padding: 2%;
   height: 100%;
@@ -1111,11 +1206,10 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius:  0 0 200px;
 }
 .partnersflow .sub-title{
   font-size: 30px;
-  color: red;
+  color: #f38e40;
   width: 100%;
   font-weight:  600;
   text-align: center;
@@ -1138,6 +1232,7 @@ body{
   .partnersflow .right-text{
     width: 100%;
     font-size: 14px;
+    border-radius: 0 0 30px 30px;
   }
   .partnersflow .left-image img{
     border-radius: 0;
@@ -1317,26 +1412,30 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   width: 40%;
   padding: 5px;
 }
 .quickfooter .quicklink{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   flex-direction: column;
-  width: 20%;
-  padding: 10px;
+  width: 25%;
 }
 .quickfooter .quickaddress .contentaddress{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 10px; 
+  padding: 5px 10px; 
 }
 .quickfooter .quicklink .contentaddlink{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column; 
+  border-left: 2px #1376bc solid;
+  border-right: 2px #1376bc solid;
+  padding: 0 20px;
 }
 .quickfooter .quicklink .contentaddlink .title{
   font-size: 24px;
@@ -1415,10 +1514,10 @@ body{
     padding: 10px;
   }
   .quickfooter .logo-left .img1{
-    width: 50%;
+    width: 75%;
   }
   .quickfooter .logo-left .img2{
-    width: 100%;
+    width: 75%;
   }
   .quickfooter .quickaddress{
     width: 90%;
