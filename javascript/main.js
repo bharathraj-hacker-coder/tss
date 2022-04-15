@@ -1,3 +1,13 @@
+$(document).ready(function(){
+        window.setTimeout('fadeout();', 2000);  
+    });
+
+    function fadeout(){
+        $('#loader').delay(1000).fadeOut('slow', function() {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        });
+    }
 jQuery(document).ready(function( $ ){
 
   // Header fixed on scroll
