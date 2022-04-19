@@ -7,18 +7,23 @@ $(document).ready(function(){
           document.querySelector("#loader").style.display = "none";
           document.querySelector("body").style.visibility = "visible";
         });
-    }
+    }    
 jQuery(document).ready(function( $ ){
 
   // Header fixed on scroll
   $(window).scroll(function() {
-    if($(this).scrollTop() > 2000){
+    if($(this).scrollTop() > 2200){
       $('.cardl').addClass('animatel');
       $('.cardr').addClass('animatel');
       $('.mission').removeClass('fade-in-text');
       $('.vision').removeClass('fade-in-text');
       $('.vision-title-ovm').removeClass('fade-in-text');
       $('.mission-title-ovm').removeClass('fade-in-text');
+    }
+    else if ($(this).scrollTop() > 1200) {
+      $('#don-parag').addClass('fade-in-text');
+      $('.cardl').removeClass('animatel');
+      $('.cardr').removeClass('animatel');
     }
     else if ($(this).scrollTop() > 900) {
       $('.mission').addClass('fade-in-text');
@@ -29,12 +34,19 @@ jQuery(document).ready(function( $ ){
       $('#ahc-image').removeClass('movefromright');
       $('#bhc-image').removeClass('movefromleft ');
       $('#bhc-parag').removeClass('movefromright');
+      $('#don-parag').removeClass('fade-in-text');
     }
     else if ($(this).scrollTop() > 400) {
+      $('.mission').removeClass('fade-in-text');
+      $('.vision').removeClass('fade-in-text');
+      $('.vision-title-ovm').removeClass('fade-in-text');
+      $('.mission-title-ovm').removeClass('fade-in-text');
       $('#chc-parag').addClass('movefromleft');
       $('#chc-image').addClass('movefromright');
       $('#dhc-image').addClass('movefromleft');
       $('#dhc-parag').addClass('movefromright');
+      $('#con-parag').addClass('movefromleft');
+      $('#con-img').addClass('movefromright');
     }
     else if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -49,6 +61,8 @@ jQuery(document).ready(function( $ ){
       $('.cardr').removeClass('animatel');
       $('.mission').removeClass('fade-in-text');
       $('.vision').removeClass('fade-in-text');
+      $('#con-parag').removeClass('movefromleft ');
+      $('#con-img').removeClass('movefromright');
       $('.vision-title-ovm').removeClass('fade-in-text');
       $('.mission-title-ovm').removeClass('fade-in-text');
     }
