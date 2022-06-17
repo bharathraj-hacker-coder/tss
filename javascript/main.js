@@ -13,8 +13,6 @@ jQuery(document).ready(function( $ ){
   // Header fixed on scroll
   $(window).scroll(function() {
     if($(this).scrollTop() > 2200){
-      $('.cardl').addClass('animatel');
-      $('.cardr').addClass('animatel');
       $('.mission').removeClass('fade-in-text');
       $('.vision').removeClass('fade-in-text');
       $('.vision-title-ovm').removeClass('fade-in-text');
@@ -22,8 +20,6 @@ jQuery(document).ready(function( $ ){
     }
     else if ($(this).scrollTop() > 1200) {
       $('#don-parag').addClass('fade-in-text');
-      $('.cardl').removeClass('animatel');
-      $('.cardr').removeClass('animatel');
     }
     else if ($(this).scrollTop() > 900) {
       $('.mission').addClass('fade-in-text');
@@ -57,8 +53,6 @@ jQuery(document).ready(function( $ ){
       $("a[class!='menu-active']").addClass('changecolor');
       $('#hc-parag').addClass('animate');
       $('#hc-image').addClass('animate');
-      $('.cardl').removeClass('animatel');
-      $('.cardr').removeClass('animatel');
       $('.mission').removeClass('fade-in-text');
       $('.vision').removeClass('fade-in-text');
       $('#con-parag').removeClass('movefromleft ');
