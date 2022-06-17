@@ -331,7 +331,7 @@ body{
 .overmainimage{
     color: #ffffff;
     position:absolute ;
-    top: 55%;
+    top: 50%;
     left: 45%;
     letter-spacing: 5px;
     animation-duration: 6s!important;
@@ -635,6 +635,7 @@ body{
 .sponsors-cards .logo{
   width: 15%;
   display: flex;
+  height: 120px;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
@@ -773,7 +774,7 @@ body{
   }
   .slideshow-container .slideimage{
     float: right;
-    margin-right: -250px;
+    margin: -200px -700px -180px 0;
   }
   .slideshow-container .slideimage1{
     float: right;
@@ -781,7 +782,7 @@ body{
   }
   .overmainimage{
     color: #ffffff;
-    top: 25%;
+    top: 35%;
     text-align-last: right;
     font-size: 50px;
   }
@@ -823,8 +824,6 @@ body{
     font-size: 24px;
     line-height: 25px;
   }
-    align-self: center;
-    text-align: -webkit-center;
 }
 @media screen and (max-width: 800px){
   .vis-mis-out .donatecont{
@@ -832,6 +831,7 @@ body{
   }
   .sponsors-cards .logo{
     width: 130px;
+    height: 60px;
     margin: 5px 15px;
   }
   .sponsors-cards .logo a{
@@ -1235,14 +1235,6 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.partnersflow .sub-title{
-  font-size: 30px;
-  color: #f38e40;
-  width: 100%;
-  font-weight:  600;
-  text-align: center;
-  position: relative;
 }
 .partnersflow .right-text p{
   text-align: justify;
@@ -2036,3 +2028,4 @@ body{
 .legs.back {
   left: 60%;
 }
+
