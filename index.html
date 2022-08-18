@@ -52,7 +52,8 @@
         <li><a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a></li>
         <li><a href="https://energyboatchallenge.com/en/home-english/" target="_blank" title="MEBC(HOME)" data-ripple="">MEBC </a></li>
         <li><a href="Partners.html" title="Partners" data-ripple="">Partners</a></li>
-        <li><a href="Contribute.html" title="Donate Us" data-ripple="">Contribute</a></li>
+        <li><a href="2023-recruitment.html" title="Recruitment" data-ripple="">Recruitment</a></li>
+        <!-- <li><a href="Contribute.html" title="Donate Us" data-ripple="">Contribute</a></li> -->
         <li><a href="About_us.html" title="About Us" data-ripple="">About Us</a></li>
         <li><a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a></li>
       </ul>
@@ -64,7 +65,8 @@
             <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a>
             <a href="https://energyboatchallenge.com/en/home-english/" target="_blank" title="MEBC(HOME)" data-ripple="">MEBC </a>
             <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
-            <a href="Contribute.html" title="Donate Us" data-ripple="">Contribute</a>
+            <a href="2023-recruitment.html" title="Recruitment" data-ripple="">Recruitment</a>
+            <!-- <a href="Contribute.html" title="Donate Us" data-ripple="">Contribute</a> -->
             <a href="About_us.html" title="About Us" data-ripple="">About Us</a>
             <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
           </div>
@@ -73,14 +75,30 @@
       </div>
     </div>
   </header><!-- #header -->
-  <div class="slideshow-container">
-    <video style="width: 100%;min-width: fit-content; margin: -180px 0;"  class="slideimage" autoplay loop muted>
+  <div class="slideshow-containerc">
+    <div class="mySlides fade">
+      <img src="images/Tss.web.3.1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/Tss.web.2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/Tss.web.1.png" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="overmainimage rmcont">
+      <a class="over" href="https://www.legrand.co.in/" target="_blank">Apply here</a>
+    </div>
+    <!-- <video style="width: 100%;min-width: fit-content; margin: -180px 0;"  class="slideimage" autoplay loop muted>
       <source src="images/home-vid.mp4" type="video/mp4">
-    </video>
-    <div class="overmainimage fade-in-text">
+    </video> -->
+<!--     <div class="overmainimage fade-in-text">
       <img width="20%" src="images/flag.png"><br>
       <span>TEAM<br>SEA<br>SAKTHI</span>
-    </div>  
+    </div>  --> 
   </div>
   <div class="homecontainer">
     <div class="parag" id="hc-parag">
@@ -130,7 +148,7 @@
       <a href="https://energyboatchallenge.com" target="_blank">Read More...</a>
     </div>
   </div>
-  <div class="vis-mis-out donate">
+  <!-- <div class="vis-mis-out donate">
     <img class="donimg" src="images/donationhome.png">
     <div class="centered-cont homecontainer donatecont">
       <div class="parag" id="don-parag">
@@ -166,7 +184,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="sponsors-title">
     <span>Partners</span>
   </div>
@@ -303,7 +321,8 @@
           <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a>
           <a href="https://energyboatchallenge.com/en/home-english/" target="_blank" title="MEBC(HOME)" data-ripple="">MEBC </a>
           <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
-          <a href="Contribute.html" title="Donate Us" data-ripple="">Contribute</a>
+          <a href="2023-recruitment.html" title="Recruitment" data-ripple="">Recruitment</a>
+          <!-- <a href="Contribute.html" title="Donate Us" data-ripple="">Contribute</a> -->
           <a href="About_us.html" title="About Us" data-ripple="">About Us</a>
           <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
       </div>
@@ -343,4 +362,37 @@
     <div class="rightalign">Developed by BHARATHRAJ M (bharathrajmuthu@gmail.com)</div>
   </div>
 </body>
+<script>
+  var slideIndex = 0;
+  var slides = document.getElementsByClassName("mySlides");
+
+showSlides();
+
+function showSlides() {    
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+function currentSlide(no) {
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex = no;
+    slides[no-1].style.display = "block";
+}
+
+function plusSlides(n) {
+  var newslideIndex = slideIndex + n;
+  if(newslideIndex < 4 && newslideIndex > 0){
+     currentSlide(newslideIndex);
+  }
+}
+</script>
 </html>
