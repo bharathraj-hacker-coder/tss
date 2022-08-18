@@ -126,45 +126,101 @@
       <p>&#8226; Excellent communication skills, both written and oral.<br>&#8226; Strong planning skills.<br>&#8226; Logical and systematic approach to work.<br>&#8226; Good time management, with the ability to work under pressure, maintain accuracy and keep to deadlines.<br>&#8226; Negotiation and influencing skills.<br><br><b>Job Description:</b><br><br>&#8226; Work with procurement managers and vendors to source the right products.<br>&#8226; Control manufacturing and delivery processes.<br>&#8226; Plan and implement logistical strategy, ensuring that targets are met.<br>&#8226; Develop new and existing relationships with suppliers.<br>&#8226; Manage the cost involved while maintaining quality and meeting the necessities.<br>&#8226; Consider the environmental impact of the supply chain in order to meet the sustainability targets.</p>
     </div>
   </div>
-  <!-- <div class="contactuscontainer don-cont">
-    <div class="contactaddress don-contact">
-      <div class="addcontent don-addc">
-        <span>Terms of Agreement</span><br><br>
-        <p>1) Your payment is in process with the TSS’s  Patreon account!<br><br>2) Once the payment is confirmed, our team will be in touch with you!<br><br>3) After the processing, you/your company will officially be a partner of TSS.<br><br>4) Caution: Once payment is done , it will be non-refundable.<br><br>5) Congratulations on becoming patrons on TSS’s  Patreon account , We are proud to represent you Along with India in MEBC!</span>
-      </div>
-    </div> --><!-- 
-    <form class="contactform" method="POST" action="https://script.google.com/macros/s/AKfycbxitmZAj7bkUDT4hg6OfF7bVGEgiuqmJTnxWeX5nBa2mpgBANG8PxhtHmbMfFm75wN4/exec">
-      <label for="selectplan">Select Plan</label>
-      <select name="Plan" id="plans">
-        <option hidden>Select Plan</option>
-        <option value="Basics">Basics</option>
-        <option value="Pro">Pro</option>
-        <option value="Enterprise">Enterprise</option>
+
+  <div style="padding-top: 40px;" class="sponsors-title">
+    <span>Submit Your Application</span>
+  </div>
+<div class="containerform">
+  <form method="POST" action="https://script.google.com/macros/s/AKfycbzcgI9G1lceuE0qCPn8v9IfPv3n_7saUo09z646wCciSDYw01I5SEVOpNSVK0fI_mOn/exec">
+    <div class="column">
+      <label for="oname">NAME*:</label>
+      <input type="text" id="oname" name="NAME" placeholder="Name in caps ABCD.E..." required>
+    </div>
+    <div class="column">
+      <label for="rollnum">ROLL NO.*:</label>
+      <input type="text" id="rollnum" name="ROLLNO" placeholder="20BIT001..." required>
+    </div>
+    <div class="column">
+      <label for="dept">DEPARTMENT*:</label>
+      <input type="text" id="dept" name="DEPARTMENT" placeholder="Information technology..." required>
+    </div>
+    <div class="column">
+      <label for="year">YEAR*:</label>
+      <input type="number" class="running" id="year" name="YEAR" placeholder="1/2/3/4..." required>
+    </div>
+    <div class="column">
+      <label for="mobilenumber">MOBILE NUMBER*:</label>
+      <input type="number" class="running" placeholder="Whatsapp Mobile number" name="MOBILE_NUMBER" id="mobilenumber" required>
+    </div>
+    <div class="column">
+      <label for="ds-hs">ARE YOU A*:</label>
+      <select name="Ds-Hs" id="ds-hs">
+      <option value="" hidden>Dayscholor / Hosteller</option>
+      <option value="Dayscholor">Dayscholor</option>
+      <option value="Hosteller">Hosteller</option>
       </select>
-
-      <label for="name">Name</label>
-      <input type="text" id="name" name="Name" placeholder="Your Name..">
-
-      <label for="email">Email</label>
-      <input type="text" id="email" name="Email" placeholder="Your Email..">
-
-      <label for="phnum">Mobile Number</label>
-      <input type="text" id="phnum" name="Mobile_Number" placeholder="Your Mobile Number..">
-
-      <label for="amt">Amount Contributed</label>
-      <input type="text" id="amt" name="Amount_Contributed" placeholder="Amount Contributed..">
-
-      <label for="mop">Mode Of Payment</label>
-      <select name="Mode_of_Payment" id="mop">
-        <option hidden>Select Mode Of Payment</option>
-        <option value="Bank Transfer">Bank Transfer</option>
-        <option value="UPI">UPI</option>
-        <option value="Other">Other</option>
+    </div>
+    <div class="column">
+      <label for="gender">GENDER*:</label>
+      <select placeholder="Gender" name="GENDER" id="gender" required>
+      <option value="" hidden>Select Gender</option>
+      <option value="male">MALE</option>
+      <option value="female">FEMALE</option>
+      <option value="other">OTHER</option>
       </select>
-
-      <input class="contactsubmit" type="submit" value="Submit">
-    </form>
-  </div> -->
+    </div>
+    <div class="column">
+      <label for="postion">JOB ROLE*:</label>
+      <select name="JOBROLE" id="position" onclick ="callcurrently()" required>
+      <option value="" hidden>Select JOB ROLE</option>
+      <option value="RENEWABLE-ENERGY AND POWER SOURCE ENGINEER">1. RENEWABLE-ENERGY AND POWER SOURCE ENGINEER</option>
+      <option value="EMBEDDED SOFTWARE ENGINEER">2. EMBEDDED SOFTWARE ENGINEER</option>
+      <option value="AI / ML / AR and DATA ANALYST">3. AI / ML / AR and DATA ANALYST</option>
+      <option value="CAE AND MATERIAL SCIENCE ENGINEER">4. CAE AND MATERIAL SCIENCE ENGINEER</option>
+      <option value="CFD AND SURFACE DESIGNING ENGINEER">5. CFD AND SURFACE DESIGNING ENGINEER</option>
+      <option value="MANUFACTURING AND INTEGRATION(EXECUTIVE)">6. MANUFACTURING AND INTEGRATION(EXECUTIVE)</option>
+      <option value="Sponsorship (Executive)">7. Sponsorship (Executive)</option>
+      <option value="Media and Outreach (Handler)">8. Media and Outreach (Handler)</option>
+      <option value="Supply Chain and Logistics(Executive)">9. Supply Chain and Logistics(Executive)</option>
+      </select>
+    </div>
+    <div class="column bigcol">
+      <label for="whytss">WHY TSS*:</label>
+      <textarea id="whytss" name="whytss" placeholder="Why you want to join TSS" style="height:200px"></textarea>
+    </div>
+    <div class="column bigcol">
+      <label for="club">PART OF ANY CLUB/FOURM*:</label>
+      <textarea id="club" name="club/forum" placeholder="Club name - position.." style="height:200px"></textarea>
+    </div>
+    <div class="column bigcol">
+      <label for="pastexp">PAST EXPERIENCES*:</label>
+      <textarea id="pastexp" name="pastexp" placeholder="(Projects/research works/management).." style="height:200px"></textarea>
+    </div>
+    <div class="column bigcol">
+      <label for="tssmebc">WHAT DO YOU KNOW ABOUT MEBC & TSS*:</label>
+      <textarea id="tssmebc" name="tssmebc" placeholder="Type what you know.." style="height:200px"></textarea>
+    </div>
+    <div class="column bigcolc workingcurrently" id="workingcurrently1">
+      <label for="case1">CASE-1: YOU’RE IN MONACO. ON OPENING THE PACKAGES, YOU HAVE MISPLACED A VERY IMPORTANT COMPONENT IN INDIA. HOW DO YOU REACT?*</label>
+      <textarea id="case1" name="case1" placeholder="Max 150 words" style="height:200px"></textarea>
+    </div>
+    <div class="column bigcolc workingcurrently" id="workingcurrently2">
+      <label for="case2">CASE-2: WHILE ATTEMPTING AN OVERALL INTEGRATION, YOU REALISE THAT ONE PRODUCT DOESN’T MATCH THE SPECIFICATION. WHAT WILL BE YOUR RESPONSE?*</label>
+      <textarea id="case2" name="case2" placeholder="Max 150 words" style="height:200px"></textarea>
+    </div>
+    <div class="column bigcolc studentcurrently" id="studentcurrently1">
+      <label for="case3">CASE-1: YOU HAPPEN TO LOSE ONE OF YOUR PROMINENT SPONSORS IN THE LAST MINUTE. HOW WOULD YOU REACT AND HOW WOULD YOU GET THROUGH IT?*:</label>
+      <textarea id="case3" name="case3" placeholder="Max 150 words" style="height:200px"></textarea>
+    </div>
+    <div class="column bigcolc studentcurrently" id="studentcurrently2">
+      <label for="case4">CASE-2: FOR THE 2022 CHALLENGE, TEAM SEA SAKTHI HAD A POWERFUL TAG OF BEING THE FIRST INDIAN TEAM TO REPRESENT THE COUNTRY IN THE MONACO ENERGY BOAT CHALLENGE. HENCE, THIS TAG PLAYED A VERY IMPORTANT ROLE IN BOTH FINANCIAL AND MEDIA SUPPORT. HOWEVER, FOR THE 2023 CHALLENGE, WE FALL SHORT OF SUCH A POWERFUL TAG. HOW WOULD YOU OVERCOME THIS SHORTCOMING?*:</label>
+      <textarea id="case4" name="case4" placeholder="Max 150 words" style="height:200px"></textarea>
+    </div>
+    <div class="column submitform">
+      <input style="font-size: 24px;" class="contactsubmit" type="submit" value="APPLY">
+    </div>
+  </form>
+</div>
   <div class="quickfooter">
     <div class="logo-left">      
       <a href="index.html" title="Home" data-ripple=""><img src="images/TSS_logo.svg" class="img1" alt="" title=""></a>      
@@ -245,6 +301,24 @@
       document.getElementById("accordion_"+num).classList.remove("activebg");
       document.getElementById("panel_"+extract).style.display="none";
       num="";
+    }
+  }
+
+  function callcurrently() {
+    var eID = document.getElementById("position");
+    var current = eID.options[eID.selectedIndex].value;
+    console.log(current);
+    if (current == "Sponsorship (Executive)" || current == "Media and Outreach (Handler)" || current == "Supply Chain and Logistics(Executive)"){
+      document.getElementById("workingcurrently1").style.display="none";
+      document.getElementById("workingcurrently2").style.display="none";
+      document.getElementById("studentcurrently1").style.display="block";
+      document.getElementById("studentcurrently2").style.display="block";
+    } 
+    else{
+      document.getElementById("studentcurrently1").style.display="none";
+      document.getElementById("studentcurrently2").style.display="none";
+      document.getElementById("workingcurrently1").style.display="block";
+      document.getElementById("workingcurrently2").style.display="block";
     }
   }
 </script>
