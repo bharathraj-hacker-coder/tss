@@ -1483,7 +1483,8 @@ body{
   resize: vertical;
 }
 
-.contactuscontainer .contactform .contactsubmit {
+.contactuscontainer .contactform .contactsubmit,
+.containerform .contactsubmit {
   color: #ffffff;
   background-color: #254e9c;
   border: 2px solid #254e9c;
@@ -1494,7 +1495,8 @@ body{
   cursor: pointer;
 }
 
-.contactuscontainer .contactform .contactsubmit:hover {
+.contactuscontainer .contactform .contactsubmit:hover,
+.containerform .contactsubmit:hover {
   color: #ea423a;
   background-color: #ffffff;
   border: 2px solid #ea423a;
@@ -2149,6 +2151,78 @@ body{
   width: 80%;
   overflow: hidden;
 }
+
+.containerform label {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.containerform input[type=text],.containerform select,.containerform .running{
+    height: 50px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    background-color: white;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.containerform option{
+  font-size: 15px;
+}
+.containerform {
+    background-color: white;
+    margin-left:10%;
+    width: 90%;
+}
+
+.containerform .column {
+  float: left;
+  width: 22%;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+.containerform .bigcol {
+  width: 44% !important;
+}
+.containerform .bigcolc{
+  width: 88% !important;
+}
+.containerform .workingcurrently{
+  display: none;
+}
+
+.containerform .studentcurrently{
+  display: none;
+}
+.containerform .submitform{
+  width: 100%;
+  margin-left: -8%;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 950px) {
+  .containerform {
+    margin-left: 5%;
+    width: 95%;
+  }
+  .containerform .column {
+    width: 47%;
+    padding: 5px;
+  }
+  .containerform .submitform{
+    width: 100%!important;
+    padding-bottom: 40px;
+    margin-left: -5%;
+  }
+  .containerform .bigcol,
+  .containerform .bigcolc{
+    width: 94% !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Recruitment end
 --------------------------------------------------------------*/
