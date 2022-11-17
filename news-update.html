@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Team Sea Sakthi</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <!-- Main Stylesheet File -->
+  <link  rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="javascript/main.js"></script>
+</head>
+<script> 
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "300px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+  
+</script>
+<body>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+      <div id="logo0">
+        <a href="index.html" title="Home" data-ripple=""><img src="images/TSS_logo_w.png" id="logo0" alt="" title=""></a>
+      </div>
+      <div id="logo1">
+        <a href="index.html" title="Home" data-ripple=""><img src="images/TSS_logo.png" id="logo1" alt="" title=""></a>
+      </div>
+      <div id="nav-menu-container">
+      <ul class="nav-menu nshow">
+        <li><a href="index.html" title="Home" data-ripple="">Home</a></li>
+        <li><a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a></li>
+        <li><a href="https://energyboatchallenge.com/en/home-english/" target="_blank" title="MEBC(HOME)" data-ripple="">MEBC </a></li>
+        <li><a href="Partners.html" title="Partners" data-ripple="">Partners</a></li>
+        <!-- <li><a href="2023-recruitment.html" title="Recruitment" data-ripple="">Recruitment</a></li> -->
+        <!-- <li><a href="Contribute.html" class="menu-active" title="Donate Us" data-ripple="">Contribute</a></li> -->
+        <li><a href="Gallery.html" title="Gallery" data-ripple="">Gallery</a></li>
+        <li><a href="news-update.html" class="menu-active" title="News" data-ripple="">News</a></li>
+        <li><a href="About_us.html" title="About Us" data-ripple="">About Us</a></li>
+        <li><a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a></li>
+      </ul>
+        <li class="men">
+          <div id="mySidepanel" class="sidepanel">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
+            <span>MENU</span>
+            <a href="index.html"title="Home" data-ripple="" >Home</a>
+            <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a>
+            <a href="https://energyboatchallenge.com/en/home-english/" target="_blank" title="MEBC(HOME)" data-ripple="">MEBC </a>
+            <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
+            <!-- <a href="2023-recruitment.html" title="Recruitment" data-ripple="">Recruitment</a> -->
+            <!-- <a href="Contribute.html" class="menu-active" title="Donate Us" data-ripple="">Contribute</a> -->
+            <a href="Gallery.html" title="Gallery" data-ripple="">Gallery</a>
+            <a href="news-update.html" class="menu-active" title="News" data-ripple="">News</a>
+            <a href="About_us.html" title="About Us" data-ripple="">About Us</a>
+            <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
+          </div>
+          <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button> 
+        </li>
+      </div>
+    </div>
+  </header><!-- #header -->
+  <div class="slideshow-container">
+    <img src="images/bgmain.jpg" style="width: 100%;min-width: fit-content;" class="slideimage1">
+    <div class="overmainimage1 fade-in-text">
+      <span>NEWS</span>
+    </div>  
+  </div>
+  <div>
+    <div class="top-content">
+      <h3>Filter</h3>
+      <button id="WebArticles" class="btn-nav menubutt" onclick="displaycards('WebArticles')">Web-Articles</button>
+      <button id="Newscoverage" class="btn-nav menubutt" onclick="displaycards('Newscoverage')">News-Coverage</button>
+      <button id="NewsArticles" class="btn-nav menubutt" onclick="displaycards('NewsArticles')">News-Articles</button>
+    </div>
+  </div>
+  <div id="containermain" class="containermain">
+  </div>
+  <div class="quickfooter">
+    <div class="logo-left">      
+      <a href="index.html" title="Home" data-ripple=""><img src="images/TSS_logo.svg" class="img1" alt="" title=""></a>      
+      <a href="index.html" target="_blank" title="Home" data-ripple=""><img src="images/kumaraguru_institutions.png" class="img2"></a>
+    </div>
+    <div class="quicklink">
+      <div class="contentaddlink">
+        <span class="title">Quick Links</span>
+          <a href="index.html"title="Home" data-ripple="">Home</a>
+          <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a>
+          <a href="https://energyboatchallenge.com/en/home-english/" target="_blank" title="MEBC(HOME)" data-ripple="">MEBC </a>
+          <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
+          <!-- <a href="2023-recruitment.html" title="Recruitment" data-ripple="">Recruitment</a> -->
+          <!-- <a href="Contribute.html" class="menu-active" title="Donate Us" data-ripple="">Contribute</a> -->
+          <a href="Gallery.html" title="Gallery" data-ripple="">Gallery</a>
+          <a href="news-update.html" class="menu-active" title="News" data-ripple="">News</a>
+          <a href="About_us.html" title="About Us" data-ripple="">About Us</a>
+          <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
+      </div>
+    </div>
+    <div class="quickaddress">
+      <div class="contentaddress">
+        <div><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <span>KCT Garage,</span><br>
+          <span>Athipalayam Rd,</span><br>
+          <span>Chinnavedampatti,</span><br>
+          <span>Coimbatore, Tamil Nadu 641049</span><br>
+        </div>
+      </div>
+      <div class="contentaddress">
+        <div><i class="fas fa-envelope"></i></div>
+        <div>
+          <span>seasakthi@kct.ac.in</span>
+        </div>
+      </div>
+      <div class="contentaddress">
+        <div><i class="fas fa-phone-alt"></i></div>
+        <div>
+          <span>9048851600</span>
+        </div>
+      </div>
+      <div class="quicksocialmedia">
+        <a href="https://www.instagram.com/teamseasakthi" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/TeamSeaSakthi.KCT/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Sea_Sakthi"><i class="fab fa-twitter" target="_blank"></i></a>
+        <a href="https://www.linkedin.com/in/team-sea-sakthi-kct-564bbb22a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="leftalign">© 2022 Team Sea Sakthi</div>
+    <div class="rightalign">Developed by BHARATHRAJ M (bharathrajmuthu@gmail.com)</div>
+  </div>
+</body>
+<script>
+  
+    function displaycards(choice_filter){
+        var walist=[['ANI News','Team India Sea Sakthi bags Communication prize in Monaco Energy Boat Challenge','https://www.aninews.in/news/sports/others/team-india-sea-sakthi-bags-communication-prize-in-monaco-energy-boat-challenge20220710180330/'],['Times of OMAN','India well positioned to attract more investments from Europe: Envoy','https://timesofoman.com/article/118858-india-well-positioned-to-attract-more-investments-from-europe-envoy'],['abp Live','In A First, Monaco Energy Boat Challenge 2022 Has An Indian Entry. Shashi Tharoor Shares Teams Plea For Aid','https://news.abplive.com/news/india/sea-sakthi-first-only-indian-team-to-participate-in-monaco-energy-boat-challenge-2022-shashi-tharoor-1531494'],['ANI News','Team India Sea Sakthi confident enough to win Monaco Energy Boat Challenge','https://www.aninews.in/news/sports/others/team-india-sea-sakthi-confident-enough-to-win-monaco-energy-boat-challenge20220708192820/'],['Devdiscourse','Team India Sea Shakti is ready to ride Monaco Energy Boat Challenge','https://www.devdiscourse.com/article/sports-games/2101896-team-india-sea-shakti-is-ready-to-ride-monaco-energy-boat-challenge'],['The Print','Team India Sea Sakthi bags Communication prize in Monaco Energy Boat Challenge','https://theprint.in/sport/team-india-sea-sakthi-bags-communication-prize-in-monaco-energy-boat-challenge/1033247/'],['The Hindu','Tamil Nadu students’ solar-powered boat, YALI, is the first Indian entry at the Monaco Energy Boat Challenge','https://www.thehindu.com/society/tamil-nadu-students-solar-powered-boat-yali-is-the-first-indian-entry-at-the-monaco-energy-boat-challenge/article65403944.ece'],['Times of India','City students pen history, to sail for Monaco to represent India','https://timesofindia.indiatimes.com/city/coimbatore/city-students-pen-history-to-sail-for-monaco-to-represent-india/articleshow/91223171.cms'],['The Better India','Students Design Zero Emission, Sustainable Boat to Represent India in Monaco','https://www.thebetterindia.com/288521/kumaraguru-college-zero-emissions-monaco-energy-boat-challenge/'],['The New Indian Express','Sailing hopes, gaining pride','https://www.newindianexpress.com/cities/chennai/2022/may/11/sailing-hopes-gaining-pride-2452051.html'],['Web India 123','Team India Sea Sakthi confident enough to win Monaco Energy Boat Challenge','https://news.webindia123.com/news/articles/Sports/20220708/3960740.html'],['Simplicity','Yali - a solar-powered boat from Team Sea Sakthi of KCT to debut at International Monaco Energy Boat Challenge','https://simplicity.in/coimbatore/english/education/2370/Yali-a-solar-powered-boat-from-Team-Sea-Sakthi-of-KCT-to-debut-at-International-Monaco-Energy-Boat-Challenge'],['MTI News','Group Legrand India supports ‘Team Sea Sakthi’ to participate in Monaco Energy Boat Challenge 2022','https://mtinews.in/group-legrand-india-supports-team-sea-sakthi-to-participate-in-monaco-energy-boat-challenge-2022/'],['News Monaco','Indian college  team takes up MONACO ENERGY BOAT CHALLENGE','https://news.mc/2022/05/03/indian-college-team-takes-up-monaco-energy-boat-challenge/'],['Spirit of Mumbai','Group Legrand India supports Team Sea Sakthi to participate in Monaco Energy Boat Challenge 2022','https://www.sujatawde.com/2022/06/'],['The Print','Two men and a boat — India’s Team Sea Sakthi races in Monaco but for a local cause','https://theprint.in/features/two-men-in-a-boat-indias-team-sea-sakthi-races-in-monaco-but-for-a-local-cause/1023412/'],['Navjeevan Express','Legrand India supports ‘Team Sea Sakthi’ to participate in Monaco Energy Boat Challenge 2022','https://navjeevanexpress.com/legrand-india-supports-team-sea-sakthi-to-participate-in-monaco-energy-boat-challenge-2022/'],['The Week','Group Legrand India Supports Team Sea Sakthi to Participate in Monaco Energy Boat Challenge 2022','https://www.theweek.in/wire-updates/business/2022/06/29/pwr16-legrand.html'],['The Times Bureau','Team India Sea Sakthi wins the Monaco Energy Boat Challenges Communication category.','https://thetimesbureau.com/team-india-sea-sakthi-wins-the-monaco-energy-boat-challenges-communication-category-202207/'],['Business News This Week','Group Legrand India supports Team Sea Sakthi to participate in Monaco Energy Boat Challenge 2022','http://businessnewsthisweek.com/news/group-legrand-india-supports-team-sea-sakthi-to-participate-in-monaco-energy-boat-challenge-2022/'],['KCT Blog','THIS WEEK NEXT WEEK- ISSUE 172','https://blog.kct.ac.in/this-week-next-week-issue-172/'],['New Kerala.com','Team India Sea Sakthi confident enough to win Monaco Energy Boat Challenge','https://www.newkerala.com/news/2022/89673.htm'],['Global Prime News','Group Legrand India supports ‘Team Sea Sakthi’ to participate in Monaco Energy Boat Challenge 2022','https://globalprimenews.com/2022/06/30/group-legrand-india-supports-team-sea-sakthi-to-participate-in-monaco-energy-boat-challenge-2022/'],['PNI News','Group Legrand India supports ‘Team Sea Sakthi’','https://www.pninews.com/group-legrand-india-supports-team-sea-sakthi/'],['Liwimachines','Solar boat from Tamilnadu to Monaco','https://www.liwimachines.com/solar-boat-from-tamilnadu-to-monaco/'],['EVreporter','Team Sea Sakthi set to represent India at Monaco Energy Boat Challenge 2022','https://evreporter.com/team-sea-sakthi-to-represent-india-at-monaco-energy-boat-challenge/'],['RIM DRIVE TECHNOLOGY','Monaco Energy Boat Challenge 2022','https://rimdrivetechnology.nl/2022/05/10/monaco-energy-boat-challenge-2022/'],['India CSR','CSR: Group Legrand India supports ‘Team Sea Sakthi’ to participate in Monaco Energy Boat Challenge 2022','https://indiacsr.in/csr-group-legrand-india-supports-team-sea-sakthi-to-participate-in-monaco-energy-boat-challenge-2022/']];
+        var nclist=['1HP11xMZFsg','fVnH1MJs2zA','G-iZvoQFamM','au8-O2_BOHs','EpsyaWL6GWY','irPwyEPePJA','Ln54aIVFNEQ'];
+        var nalist = ['tw1.JPG','tw2.JPG','tw3.JPG','tw4.JPG','tw5.JPG','tw6.JPG','tw7.png','1.jpg','2.jpg','3.jpeg','4.jpeg','5.jpeg','6.jpeg','7.jpeg','8.jpeg','9.jpg','10.jpeg','11.jpg','12.jpg','13.png','14.jfif','15.png','16.png','17.png'];
+        if (choice_filter=='WebArticles') {
+          document.getElementById("WebArticles").classList.add('mactive');
+          document.getElementById("Newscoverage").classList.remove('mactive');
+          document.getElementById("NewsArticles").classList.remove('mactive');
+          length_array = walist.length;
+          var divv='';
+          for (let loop_card = 0; loop_card < length_array; loop_card++){
+              divv+='<div class="card">';
+              divv+='<img src="images/bgart.jpg" class="image1">';
+              divv+='<div class="orgname">';
+              divv+='<span class="centeredpic"><b>'+walist[loop_card][0]+'</b></span>';
+              divv+='<span class="titlecard">'+walist[loop_card][1]+'</span>';
+              divv+='</div>';
+              divv+='<div class="orgbut">';
+              divv+='<a href="'+walist[loop_card][2]+'" target="_blank"><button class="viewprofilebutton menubutt">View Project</button></a>';
+              divv+='</div>';
+              divv+='</div>';
+          }
+          document.getElementById("containermain").innerHTML=divv;
+        }
+        else if (choice_filter=='Newscoverage') {
+          document.getElementById("WebArticles").classList.remove('mactive');
+          document.getElementById("Newscoverage").classList.add('mactive');
+          document.getElementById("NewsArticles").classList.remove('mactive');
+          length_array = nclist.length;
+          var divv='';
+          for (let loop_card = 0; loop_card < length_array; loop_card++){
+            divv+='<div class="card">';
+            divv+='<iframe class="video1" src="https://www.youtube.com/embed/'+nclist[loop_card]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            divv+='</div>';
+          }
+          document.getElementById("containermain").innerHTML=divv;
+        }
+        else if (choice_filter=='NewsArticles') {
+          document.getElementById("WebArticles").classList.remove('mactive');
+          document.getElementById("Newscoverage").classList.remove('mactive');
+          document.getElementById("NewsArticles").classList.add('mactive');
+
+          length_array = nalist.length;
+          var divv='<div class="gallerycont">';
+          for (let loop_card = 0; loop_card < length_array; loop_card++){
+            divv+='<img src="images/News _clippings/'+nalist[loop_card]+'">';
+          }
+          divv +='<div>';
+          document.getElementById("containermain").innerHTML=divv;
+        }
+    }
+    displaycards('WebArticles');
+</script>
+</html>
