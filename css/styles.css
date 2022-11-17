@@ -237,7 +237,7 @@ body{
   display: none;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 850px) {
     .nshow{
       display: none;
     }
@@ -335,6 +335,9 @@ body{
   width: 100%;
   position: relative;
 }*/
+.bgmain{
+  overflow: hidden;
+}
 .slideshow-container {
   width: 100%;
   overflow: hidden;
@@ -842,6 +845,9 @@ body{
   font-size: 24px;
   padding-bottom: 30px;
 }
+.slideshow-container .slideimage{
+    filter: grayscale(20%);
+}
 @media screen and (max-width: 1200px) {
   .teamcont  .card {
       width: 47%;
@@ -891,11 +897,11 @@ body{
 
   .slideshow-container .slideimage{
     float: right;
-    margin: -200px -700px -100px 0!important;
+    margin: -300px -900px 61px 0!important;
   }
   .slideshow-container .slideimage1{
     float: right;
-    margin-right: -400px;
+    margin-right: -650px;
   }
   .overmainimage{
     color: #ffffff;
@@ -998,6 +1004,69 @@ body{
     width: 80%;
   }
 }
+.galleryexpand{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.galleryexpand .card{
+  width: 100%;
+  background-color: #CB3827;
+  border-top: 15px solid #F07722;
+  border-radius: 13px;
+  height: 250px;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+
+.galleryexpand img,.galleryexpand .more{
+  width: 23%;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.galleryexpand img:hover{
+  opacity: 1;
+  box-shadow: 0px 0px 10px 6px rgb(35 47 84 / 50%)
+}
+.galleryexpand .more{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #254e9c;
+  border: 2px solid #254e9c;
+}
+.galleryexpand .more:hover{
+  background-color: #ffffff;
+  border: 2px solid #ea423a;
+}
+.galleryexpand .more:hover a{
+  color: #ea423a;
+}
+.galleryexpand a{
+  color: #ffffff;
+  font-size: 24px;
+  place-self: center;
+}
+@media screen and (max-width: 600px) {
+  .galleryexpand .card{
+    margin: 15px;
+  }
+  .galleryexpand img,.galleryexpand .more{
+    width: 46%;
+  }
+}
 /*--------------------------------------------------------------
 # Home end
 --------------------------------------------------------------*/
@@ -1021,22 +1090,23 @@ body{
     margin-right: 2%;
     padding: 50px 0 0 80px;
 }
-.pagetitlebg1 .menubutt{
+.menubutt{
     display: inline-block;
-    background-color: #ffffff;
+    background-color: #254e9c;
     border: 2px solid #254e9c;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-size: 18px;
-    margin: 48px 0;
-    height: 50px;
+    margin: 25px 0;
+    height: 40px;
     cursor: pointer;
     padding: 10px;
-    color: #ea423a;
-}
-.pagetitlebg1 .mactive,
-.pagetitlebg1 .menubutt:hover {
-    background-color: #254e9c;
     color: #ffffff;
+}
+.mactive,
+.menubutt:hover {
+    background-color: #ffffff;
+    color: #ea423a;
+    border: 2px solid #ea423a;
 }
 .maincont{
     margin-right: 50px;
@@ -1499,7 +1569,211 @@ body{
 /*--------------------------------------------------------------
 # product end
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# news start
+--------------------------------------------------------------*/
 
+.top-content{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(0,0,0,0.2);
+    background-color:#ffffff;
+    width: 100%;
+    padding-top: 0;
+    margin-top: -4px;
+    display: flex;
+    align-items: center;
+}
+/*FILTER*/
+.top-content h3{
+    display: block;
+    color:#1B2840 ;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0 50px;
+}
+.top-content .btn-nav{
+    margin-left: 1%;
+  height: 46px;
+  line-height: 29px;
+  border-radius: 34px;
+}
+
+.top-content #myInput{
+    width: 100%;
+    font-size: 18px;
+    padding: 14px 20px 14px 20px;
+    border-radius: 20px;
+    border: 1px solid #1B2840;
+    display: block;
+    height: 46px;
+}
+
+.top-content #myInput:focus {outline: none;}
+
+.top-content .dropdown {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-content .dropdown-content {
+  margin-top: 45px;
+  display: none;
+  position: absolute;
+  background-color: #1B2840;
+  width: 90%;
+  margin-left: 5%;
+  height: 150px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.top-content .dropdown-content option{
+  color: #85CEBC;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.top-content .dropdown option:hover {
+    color: #ffffff;
+    border: 1px solid #85CEBC;
+}
+
+.top-content .show {display: block;}
+
+.raised{
+    z-index: 1;
+}
+
+.containermain .card {
+    box-shadow: 0px 3px 6px #1B2840;
+    border-radius: 15px;
+    border: 2px solid #1B2840;
+  transition: 0.3s;
+  color: white;
+  background-color: #ffffff;
+  margin: 20px;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+    height: 400px;
+    position: relative;
+}
+.containermain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containermain .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(44, 43, 43, 0.911);
+}
+.containermain .orgname{
+    margin-top: 40px;
+  width: 100%;
+  height: 30px;
+    font-size: 15px;
+    color: #1B2840;
+}
+.containermain .centeredpic{
+    position:absolute ;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:#fff ;
+    border: 6px solid #ffffff;
+    letter-spacing: 4px;
+    font-size:20px;
+    display: inline;
+    padding: 10px 30px 10px;
+}
+.containermain .orgbut{
+  width: 100%;
+}
+.containermain .image1 {
+    position: relative;
+    overflow: visible;
+    display: block;
+    height: 180px;
+    width: 100%;
+    border-radius: 15px;
+}
+.containermain .video1 {
+    height: -webkit-fill-available;
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
+.containermain .titlecard{
+    font-size: 18px;
+}
+.viewprofilebutton {
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 70px;
+  border-radius: 34px;
+}
+
+@media screen and (max-width: 1200px) {
+  .containermain  .card {
+      width: 45%;
+      margin:10px;
+  }
+  .containermain{
+    padding: 20px;
+  }
+    .btn-nav{
+        font-size: 15px;
+        padding: 6px 17.68px;
+    }
+    .top-content{
+        justify-content: center;
+    }
+    .top-content #myInput{
+        font-size: 16px;
+        width: 70%;
+    }
+    .top-content .dropdown {
+        margin-left: 0;
+        margin-right: -60px;
+    }
+    .top-content h3{
+        display: none;
+    }
+    .top-content .dropdown-content {
+        width: 55%;
+    }
+    .top-content .dropdown-content option{
+        font-size: 10px;
+        padding: 14px 9px;
+    }
+}
+@media screen and (max-width: 750px) {
+  .containermain  .card {
+      width: 80%;
+      margin:15px;
+  }
+  .containermain{
+      margin-left: 3%;
+      margin-right: 1%;
+      padding: 0;
+  }
+    .btn-nav{
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .top-content .dropdown-content {
+        width: 50%;
+    }
+    .top-content .dropdown-content option{
+        font-size: 7px;
+        padding: 8px 5px;
+    }
+}
+/*--------------------------------------------------------------
+# news end
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # contact us start
 --------------------------------------------------------------*/
@@ -2276,4 +2550,115 @@ body{
 
 /*--------------------------------------------------------------
 # Recruitment end
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Gallery start
+--------------------------------------------------------------*/
+.gallerycont {
+   line-height:0;
+   column-count:4;
+   column-gap:5px;
+   padding: 20px;
+}
+.gallerycont img {
+   width: 100% !important;
+   height: auto !important;
+   border: 2px solid black;
+   margin-bottom:5px; /* to match column gap */
+   opacity: 0.8;
+   display: table-column;
+}
+.gallerycont img:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 10px 6px rgb(35 47 84 / 50%)
+}
+@media (max-width: 1000px) {
+   .gallerycont {
+    column-count:3;
+   }
+}
+@media (max-width: 800px) {
+   .gallerycont {
+    column-count:2;
+   }
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*--------------------------------------------------------------
+# Gallery end
 --------------------------------------------------------------*/
