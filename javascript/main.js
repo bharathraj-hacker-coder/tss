@@ -7,7 +7,7 @@ $(document).ready(function(){
           document.querySelector("#loader").style.display = "none";
           document.querySelector("body").style.visibility = "visible";
         });
-    }    
+    }
 jQuery(document).ready(function( $ ){
 
   // Header fixed on scroll
@@ -76,3 +76,4 @@ jQuery(document).ready(function( $ ){
     }
   });
 });
+
