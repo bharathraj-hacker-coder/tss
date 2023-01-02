@@ -913,6 +913,9 @@ body{
   .tomebcclock span{
     font-size: 24px;
   }
+  .sponsors-cards{
+    margin:-25px;
+  }
   .alpha{
     margin: -35px;
   }
@@ -923,7 +926,7 @@ body{
     display: none;
   }
   .nbeta{
-    top: -725px;
+    top: -545px;
   }
   .newscont{
     width: 75%;
@@ -949,6 +952,11 @@ body{
     font-size: 14px;
   }
 }
+@media screen and (max-width: 500px){
+  .top1,.top2{
+    height: 650px;
+  }
+}
 @media screen and (max-width: 700px) {
   .contactplace .centered-text{
       font-size: 24px;
@@ -969,16 +977,9 @@ body{
     font-size: 40px;
   }
 }
-  .slideshow-container img{
-    background-image:radial-gradient(#232f5444, black 90%);
-  }
-
 @media screen and (max-width: 800px){
   .slideshow-containerc {
     top: 60px;
-  }
-  .slideshow-container img{
-    margin-left: -600px;
   }
   .sponsors-cards .logo{
     width: 130px;
