@@ -640,7 +640,7 @@ body{
 }
 
 .top7 {
-   background-image: radial-gradient(circle, transparent, black),url('../images/tss_gallery/11.jpg');
+   background-image: radial-gradient(circle, transparent, black),url('../images/tss_gallery/11.JPG');
    height: 750px;
    filter: blur(2px);
    width: 100%;
@@ -913,9 +913,6 @@ body{
   .tomebcclock span{
     font-size: 24px;
   }
-  .sponsors-cards{
-    margin:-25px;
-  }
   .alpha{
     margin: -35px;
   }
@@ -926,7 +923,7 @@ body{
     display: none;
   }
   .nbeta{
-    top: -545px;
+    top: -725px;
   }
   .newscont{
     width: 75%;
@@ -952,11 +949,6 @@ body{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 500px){
-  .top1,.top2{
-    height: 650px;
-  }
-}
 @media screen and (max-width: 700px) {
   .contactplace .centered-text{
       font-size: 24px;
@@ -977,9 +969,16 @@ body{
     font-size: 40px;
   }
 }
+  .slideshow-container img{
+    background-image:radial-gradient(#232f5444, black 90%);
+  }
+
 @media screen and (max-width: 800px){
   .slideshow-containerc {
     top: 60px;
+  }
+  .slideshow-container img{
+    margin-left: -600px;
   }
   .sponsors-cards .logo{
     width: 130px;
@@ -1015,69 +1014,6 @@ body{
   }
   .contactplace p{
     width: 80%;
-  }
-}
-.galleryexpand{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 100%;
-  padding-bottom: 40px;
-}
-
-.galleryexpand .card{
-  width: 100%;
-  background-color: #CB3827;
-  border-top: 15px solid #F07722;
-  border-radius: 13px;
-  height: 250px;
-  color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  margin: 30px;
-}
-
-.galleryexpand img,.galleryexpand .more{
-  width: 23%;
-  opacity: 0.8;
-  margin-bottom: 20px;
-}
-.galleryexpand img:hover{
-  opacity: 1;
-  box-shadow: 0px 0px 10px 6px rgb(35 47 84 / 50%)
-}
-.galleryexpand .more{
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: #254e9c;
-  border: 2px solid #254e9c;
-}
-.galleryexpand .more:hover{
-  background-color: #ffffff;
-  border: 2px solid #1376bc;
-}
-.galleryexpand .more:hover a{
-  color: #1376bc;
-}
-.galleryexpand a{
-  color: #ffffff;
-  font-size: 24px;
-  place-self: center;
-}
-@media screen and (max-width: 600px) {
-  .galleryexpand .card{
-    margin: 15px;
-  }
-  .galleryexpand img,.galleryexpand .more{
-    width: 46%;
   }
 }
 /*--------------------------------------------------------------
@@ -2073,21 +2009,141 @@ body{
     column-count:2;
    }
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.galleryexpand{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  padding-bottom: 40px;
 }
 
-/* Modal Content (image) */
+/*.galleryexpand .card{
+  width: 23%;
+  border-radius: 13px;
+  height: 200px;
+  color: #232f54;
+  display: flex;
+  border: solid 2px red;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.galleryexpand .cardimg{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 13px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.galleryexpand .cardimg:hover{
+  opacity: 1;
+  box-shadow: 0px 0px 10px 6px rgb(35 47 84 / 50%)
+}*/
+.galleryexpand .imginalbum{
+  width: 240px;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/*@media screen and (max-width: 600px) {
+  .galleryexpand .card{
+    margin: 15px;
+  }
+  .galleryexpand .cardimg{
+    width: 46%;
+  }
+}*/
+.productpgsplit{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 40px 0 40px;
+}
+.sidebar-content{
+  width: 26%;
+  min-width: 340px;
+  display: block;
+  padding-bottom: 40px;
+}
+.sidebar-content .maintitle{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-decoration: none;
+  display: block;
+  color: #f38e40;
+  font-weight: 800;
+  font-size: 20px;
+  outline: none;
+  font-family: 'Bitter', serif;  
+}
+.sidebar-content .sidebar{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #254e9c;
+  margin-bottom: 5px;
+  display: block;
+  color: #ffffff;
+  border: 2px solid #254e9c;
+  font-weight: 600;
+  outline: none;
+  font-family: 'Bitter', serif;
+}
+.sidebar-content .sidebar i{
+  float: right;
+}
+
+.activesidebar,
+.sidebar-content .sidebar:hover {
+  color: #1376bc!important;
+  border: 2px solid #1376bc!important;
+  background-color: #ffffff!important;
+}
+.main-content{
+  width: 60%;
+  display: block;
+}
+@media screen and (max-width: 1000px) {
+  .sidebar-content{
+    width: 100%;
+    min-width: 300px;
+  }
+  .main-content{
+    width: 100%!important;
+  }
+  .productpgsplit{
+    display: block;
+  }
+  .galleryexpand{
+    justify-content: center;
+  }
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
 .modal-content {
   margin: auto;
   display: block;
@@ -2095,20 +2151,8 @@ body{
   max-width: 700px;
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content{  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
