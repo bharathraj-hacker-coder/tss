@@ -44,7 +44,7 @@
         <li></li> -->
         <li><a href="Partners.html" title="Partners" data-ripple="">Partners</a></li>
         <li><a href="Gallery.html" class="menu-actice" title="Gallery" data-ripple="">Gallery</a></li>
-        <li><a href="news-update.html" title="News" data-ripple="">News</a></li>
+        <li><a href="news-update.html?view=WebArticles" title="News" data-ripple="">News</a></li>
         <li><a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a></li>
       </ul>
         <li class="men">
@@ -55,7 +55,7 @@
             <!-- <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a> -->
             <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
             <a href="Gallery.html" class="menu-actice" title="Gallery" data-ripple="">Gallery</a>
-            <a href="news-update.html" title="News" data-ripple="">News</a>
+            <a href="news-update.html?view=WebArticles" title="News" data-ripple="">News</a>
             <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
           </div>
           <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button> 
@@ -69,81 +69,36 @@
       <span>Gallery</span>
     </div>  
   </div>
-  <div class="partner-title">
-    <span>-At Monaco Achievements-<br>-[4-10/07/2022]-</span>
-  </div>
-  <div class="gallerycont">
-   <img id="myImg" src="images/tss_gallery/40.jpg">
-   <img src="images/tss_gallery/41.jpg">
-   <img src="images/tss_gallery/42.jpg">
-   <img src="images/tss_gallery/43.jpg">
-   <img src="images/tss_gallery/44.jpg">
-   <img src="images/tss_gallery/45.jpg">
-   <img src="images/tss_gallery/46.jpg">
-  </div>
-
-  <div class="partner-title">
-    <span>-At Monaco Racing-<br>-[4-8/07/2022]-</span>
-  </div>
-  <div class="gallerycont">
-   <img src="images/tss_gallery/30.JPG">
-   <img src="images/tss_gallery/31.JPG">
-   <img src="images/tss_gallery/32.JPG">
-   <img src="images/tss_gallery/33.JPG">
-   <img src="images/tss_gallery/34.JPG">
-   <img src="images/tss_gallery/35.JPG">
-   <img src="images/tss_gallery/36.JPG">
-   <img src="images/tss_gallery/37.JPG">
-   <img src="images/tss_gallery/38.JPG">
-   <img src="images/tss_gallery/39.JPG">
-  </div>
-  <div class="partner-title">
-    <span>-At Monaco Event-<br>-[4-8/07/2022]-</span>
-  </div>
-  <div class="gallerycont">
-   <img src="images/tss_gallery/18.JPG">
-   <img src="images/tss_gallery/19.JPG">
-   <img src="images/tss_gallery/20.JPG">
-   <img src="images/tss_gallery/28.JPG">
-   <img src="images/tss_gallery/21.JPG">
-   <img src="images/tss_gallery/22.JPG">
-   <img src="images/tss_gallery/23.JPG">
-   <img src="images/tss_gallery/27.JPG">
-   <img src="images/tss_gallery/29.JPG">
-  </div>
-  <div class="partner-title">
-    <span>-At Chennai Testing-<br>-[8-11/05/2022]-</span>
-  </div>
-  <div class="gallerycont">
-   <img src="images/tss_gallery/9.jpg">
-   <img src="images/tss_gallery/10.JPG">
-   <img src="images/tss_gallery/12.JPG">
-   <img src="images/tss_gallery/11.JPG">
-   <img src="images/tss_gallery/13.JPG">
-   <img src="images/tss_gallery/14.JPG">
-   <img src="images/tss_gallery/15.JPG">
-   <img src="images/tss_gallery/17.JPG">
-  </div>
-  <div class="partner-title">
-    <span>-At College Launch-<br>-[06/05/2022]-</span>
-  </div>
-  <div class="gallerycont">
-   <img src="images/tss_gallery/5.jpg">
-   <img src="images/tss_gallery/6.jpg">
-   <img src="images/tss_gallery/7.jpg">
-   <img src="images/tss_gallery/8.jpg">
-  </div>
-  <div class="partner-title">
-    <span>-CAD Hull Frame-<br>-[5-10/03/2022]-</span>
-  </div>
-  <div class="gallerycont">
-   <img src="images/tss_gallery/1.PNG">
-   <img src="images/tss_gallery/2.jpg">
-   <img src="images/tss_gallery/3.jpg">
+  <div class="productpgsplit">
+    <div class="sidebar-content">
+      <span class="maintitle">ALBUMS</span>
+      <a class="sidebar" onclick="expand_gallery(0)" id="album_0">Album 1
+        <i class="fas fa-chevron-right"></i>
+      </a>
+      <a class="sidebar" onclick="expand_gallery(1)" id="album_1">Album 2
+        <i class="fas fa-chevron-right"></i>
+      </a>
+      <a class="sidebar" onclick="expand_gallery(2)" id="album_2">Album 3
+        <i class="fas fa-chevron-right"></i>
+      </a>
+      <a class="sidebar" onclick="expand_gallery(3)" id="album_3">Album 4
+        <i class="fas fa-chevron-right"></i>
+      </a>
+      <a class="sidebar" onclick="expand_gallery(4)" id="album_4">Album 5
+        <i class="fas fa-chevron-right"></i>
+      </a>
+      <a class="sidebar" onclick="expand_gallery(5)" id="album_5">Album 6
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+    <div class="main-content">
+      <div class="galleryexpand" id="galleryexpandmain">
+      </div>
+    </div>
   </div>
   <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
+    <a onclick="closeexp()" class="close">&times;</a>
+    <img class="modal-content" id="imagexp">
   </div>
   <div class="quickfooter">
     <div class="logo-left">      
@@ -157,7 +112,7 @@
           <!-- <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a> -->
           <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
           <a href="Gallery.html" class="menu-actice" title="Gallery" data-ripple="">Gallery</a>
-          <a href="news-update.html" title="News" data-ripple="">News</a>
+          <a href="news-update.html?view=WebArticles" title="News" data-ripple="">News</a>
           <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
       </div>
     </div>
@@ -197,22 +152,36 @@
   </div>
 </body>
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");;
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-}
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  function expand_gallery(album_number) {
+    var gallery=[['5.jpg','6.jpg','7.jpg','8.jpg'
+      ],['9.jpg','10.jpg','11.jpg'],['13.JPG','14.JPG','15.JPG','17.JPG'],['18.JPG','19.JPG','20.JPG','21.JPG','22.JPG','23.JPG','27.JPG','28.JPG','29.JPG'],['37.JPG','30.JPG','31.JPG','32.JPG','33.JPG','34.JPG','38.JPG','39.JPG'],['41.JPG','42.JPG','43.jpg','40.jpg','44.JPG','45.jpg','46.jpg','47.JPG','48.JPG','49.JPG']];
+    for (var i = 0; i < gallery.length; i++) {
+      var temp='album_'+i.toString();
+      document.getElementById(temp).classList.remove("activesidebar");
+    }
+    temp ='album_'+album_number.toString();
+    document.getElementById(temp).classList.add("activesidebar");
+    divv='';
+    for (let loop_card = 0; loop_card < gallery[album_number].length; loop_card++){
+      divv+='<a onclick="expandimage(this.id)" id='+gallery[album_number][loop_card]+'><img class="imginalbum" id="album_view_'+loop_card+'" src="images/tss_gallery/'+gallery[album_number][loop_card]+'"></a>';
+    }
+    document.getElementById("galleryexpandmain").innerHTML=divv;
+  }
+  expand_gallery(0);
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+  function closeexp(){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
+  function expandimage(image_name){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+    var imgexp = document.getElementById("imagexp");
+    var loc='images/tss_gallery/'+image_name;
+    console.log(loc);
+    imgexp.src=loc;
+  }
+
 </script>
 </html>

@@ -44,7 +44,7 @@
         <li></li> -->
         <li><a href="Partners.html" title="Partners" data-ripple="">Partners</a></li>
         <li><a href="Gallery.html" title="Gallery" data-ripple="">Gallery</a></li>
-        <li><a href="news-update.html" class="menu-actice" title="News" data-ripple="">News</a></li>
+        <li><a href="news-update.html?view=WebArticles" class="menu-actice" title="News" data-ripple="">News</a></li>
         <li><a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a></li>
       </ul>
         <li class="men">
@@ -55,7 +55,7 @@
             <!-- <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a> -->
             <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
             <a href="Gallery.html" title="Gallery" data-ripple="">Gallery</a>
-            <a href="news-update.html" class="menu-actice" title="News" data-ripple="">News</a>
+            <a href="news-update.html?view=WebArticles" class="menu-actice" title="News" data-ripple="">News</a>
             <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
           </div>
           <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button> 
@@ -91,7 +91,7 @@
           <!-- <a href="Tss_Fam.html" title="Tss Fam" data-ripple="">TSS-Fam</a> -->
           <a href="Partners.html" title="Partners" data-ripple="">Partners</a>
           <a href="Gallery.html" title="Gallery" data-ripple="">Gallery</a>
-          <a href="news-update.html" class="menu-actice" title="News" data-ripple="">News</a>
+          <a href="news-update.html?view=WebArticles" class="menu-actice" title="News" data-ripple="">News</a>
           <a href="Contactus.html" title="Contact us" data-ripple="">Contact us</a>
       </div>
     </div>
@@ -150,7 +150,7 @@
               divv+='<span class="titlecard">'+walist[loop_card][1]+'</span>';
               divv+='</div>';
               divv+='<div class="orgbut">';
-              divv+='<a href="'+walist[loop_card][2]+'" target="_blank"><button class="viewprofilebutton menubutt">View Project</button></a>';
+              divv+='<a href="'+walist[loop_card][2]+'" target="_blank"><button class="viewprofilebutton menubutt">View Articles</button></a>';
               divv+='</div>';
               divv+='</div>';
           }
@@ -183,6 +183,9 @@
           document.getElementById("containermain").innerHTML=divv;
         }
     }
-    displaycards('WebArticles');
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const viewoptn=urlParams.get('view');
+    displaycards(viewoptn);
 </script>
 </html>
